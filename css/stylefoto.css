@@ -76,7 +76,7 @@
     display: block;
   }
   
-  /* Дополнительные стили картинок/
+  /* Дополнительные стили картинок*/
 
   @media (min-width: 768px) {
     .image-container {
