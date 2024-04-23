@@ -1,0 +1,64 @@
+.comm-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+  grid-template-columns: repeat(5, 2fr); 
+  grid-gap: 20px;  
+}
+
+@media screen and (max-width: 700px) {
+    .comm-container {
+      grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(5, auto); 
+    }
+  }
+
+
+.comm-card {
+    
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+}
+
+.comm-card img {
+    width: 100%;  
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+.comm-card h2, .card h3, .comm-card p {
+    margin-bottom: 10px;
+}
+
+.comm-card h3{
+    color: brown;
+}
+
+.comm-icons {
+    display: flex;
+}
+
+.comm-icons a {
+    margin-right: 10px;
+}
+
+.comm-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.facebook:hover {
+    background-color: #a62828; 
+  }

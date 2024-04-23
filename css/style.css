@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.header-section-background {
+  background-image: url('/img/img.png'); 
+  background-size: cover; 
+  background-position: center; 
+  position: relative;
+}
+
+.header-section-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(37, 43, 73, 0.5); 
+  z-index: 1;
+}
+
+.header-section-background div {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.headcontainer {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+
+
+
+
+.activebox {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  /* position: fixed; */
+} 
+
+.logo {
+  font-size: 24px;
+  display: flex;
+  justify-content: left;
+  
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #656980;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-left: auto;
+
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
+}
+
+.line{
+  border-bottom: 3px solid rgb(255, 255, 255);
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.template-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  
+}
+
+.title{
+  color: aliceblue;
+  text-align: center;
+}
+
+.title h1{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title p{
+  padding-bottom: 50px;  
+}
+
+.sample {
+  text-align: center; 
+}
+
+
+.button-link {
+  background-color: #FF4343; 
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px; 
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease;
+
+}
+
+/* При наведении */
+.button-link:hover {
+  background-color: #601515;
+  width: 30px;
+  height: 60px;
+}
+
+/* При нажатии */
+.button-link:active {
+  background-color: #ff6969;
+  transition: 1.5s;
+}
+
+#More {
+  display: inline-block; 
+  cursor: pointer;
+  background-color: #FF4343;
+  padding: 10px 20px; 
+  margin-bottom: 50px;
+  border:none;
+  padding: 10px 20px;
+  border: none; 
+  outline: none; 
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.8s ease;
+}
+
+#More.hovered::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(125, 15, 25, 0.5);
+  transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  
+}
+
+#More.hovered::before {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  
+}
+
+.More {
+  box-shadow: 0 0 20px #ff0008;  
+}
