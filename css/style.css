@@ -125,7 +125,7 @@ body {
 }
 
 
-.button-link {
+#More {
   background-color: #FF4343; 
   color: #ffffff;
   text-decoration: none;
@@ -136,15 +136,18 @@ body {
 
 }
 
+.button-link{
+  color:#ccc
+}
+
 /* При наведении */
-.button-link:hover {
+#More:hover {
   background-color: #601515;
-  width: 30px;
-  height: 60px;
+
 }
 
 /* При нажатии */
-.button-link:active {
+#More:active {
   background-color: #ff6969;
   transition: 1.5s;
 }
